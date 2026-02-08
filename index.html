@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <main>
+    <header>
+    <h1>Appointment system</h1>
+    </header>
+    <form id="formid" action="">
+        <div class="field">
+            <label for="nom" > Full Name :</label><br>
+            <input type="text" id="nom">
+        </div>
+
+        <div class="field">
+            <label for="age">Age :</label><br>
+            <input type="number" id="age">
+        </div>
+
+        <div class="field">
+            <label  for="gender">Gender :</label><br>
+            <div class="champ">
+            <label for="female"><input type="radio" id="female" name="sexe" value="Female" >Female</label>
+             <label for="male"><input type="radio" id="male" name="sexe" value="Male" >Male</label>
+              <label for="other"><input type="radio" id="other" name="sexe" value="Other" >Other</label>
+              </div>
+        </div>
+
+        <div class="field">
+            <label for="service">Department :</label><br>
+            <select name="service" id="service">
+                <option value="">Select
+                </option>
+                <option value="cardiology">Cardiology</option>
+                <option value="dermatology">Dermatology</option>
+                <option value="gynecology">Gynecology</option>
+                <option value="pediatri">Pediatrie</option>
+                <option value="neurology">Neurology</option>
+                <option value="emergency">Emergency</option>
+            </select> 
+        </div>
+
+        <div class="field">
+            <label  for="date">Appointment Date :</label><br>
+            <input type="date" id="date">
+        </div>
+
+
+        
+       
+
+        <button type="submit">Submit</button>
+   
+ </form>
+
+
+    <div id="appointmentCheck">
+        <table class="tableau">
+    <thead>
+        <tr> <th>Full Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Date</th>
+           
+        </tr>
+    </thead>
+    <tbody id="appointmentBody">
+        </tbody>
+</table>
+    </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

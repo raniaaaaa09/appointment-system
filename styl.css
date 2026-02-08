@@ -1,0 +1,70 @@
+body{
+  background-color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;;
+}
+
+form{
+    background-color: white;
+    padding: 40px;
+    border: 2px solid black; 
+    border-radius: 8px;
+    max-width: 200px;  /*  sets the upper limit on how wide an element can get */
+    margin: 3% auto; /* centers the form horizontaclly and adds a top margin of 100px */
+    padding: auto; 
+display: flex;
+flex-direction: column;
+gap: 20px;
+    text-align: left;
+   
+}
+
+.champ{
+    display:flex;
+    flex-direction: column;
+     border: 1px solid black;
+    
+}
+
+.field{
+    gap: 20px;
+   
+    
+ }
+ button{
+    background-color: black;
+    color: white;
+    size: 20px;
+    text-align: left;
+ }
+label , input , select{
+    text-align: left;
+}
+
+.appointmentCheck{
+    border:2px solid black ;
+    border-radius: 8px;
+}
+.tableau{
+    border: 2px solid black;
+    color: black;
+    border-radius: 8px;
+    margin: auto;
+    background-color: white;
+}
+th{
+    border-right: 2px solid black;
+    padding: 10px;
+}
+td{  border: 2px solid black;
+    padding: 10px;
+
+}
+tr{
+    border-bottom: 2px solid black;
+    border: 2px solid black;
+
+}
+
